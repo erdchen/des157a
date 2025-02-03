@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment2</title>
+    
+</head>
+<body>
+    <h1>JS Experiment 2 - Functions&DOM</h1>
+    <h2>Choose Your Favorite Color</h2>
+    <p id="question">What is your favorite color? (Choose from red, blue, green, yellow, purple, orange)</p>
+    <form id="colorForm">
+        <input type="text" id="colorInput" placeholder="Enter a color">
+        <button type="submit">Change Color</button>
+    </form>
+    
+    <script>
+        document.querySelector("body").onload = function() {
+            let userColor = prompt("What is your favorite color? (red, blue, green, yellow, purple, orange)");
+            if (userColor) {
+                document.body.style.backgroundColor = userColor.toLowerCase();
+            }
+        };
+        
+        document.querySelector("#colorForm").onsubmit = function() {
+            event.preventDefault();
+            let color = document.querySelector("#colorInput").value.toLowerCase();
+            document.body.style.backgroundColor = color;
+        };
+    </script>
+
+    <!--The first querySelector gives the prompt when access the page, the second one let the user to change the background color on the webpage. toLowerCase and preventDefault help the page deal with capitalized spelling of color and reload when change the color after load into the page.-->
+</body>
+</html>
