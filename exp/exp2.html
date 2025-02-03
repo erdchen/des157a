@@ -24,10 +24,12 @@
         };
         
         document.querySelector("#colorForm").onsubmit = function() {
-            event = preventDefault;
+            event.preventDefault();
             let color = document.querySelector("#colorInput").value.toLowerCase();
             document.body.style.backgroundColor = color;
         };
     </script>
+
+    <!--The first querySelector gives the prompt when access the page, the second one let the user to change the background color on the webpage. toLowerCase and preventDefault help the page deal with capitalized spelling of color and reload when change the color after load into the page.-->
 </body>
 </html>
