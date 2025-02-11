@@ -81,7 +81,7 @@ form {
     gap: 20px;
     padding-bottom: 50px;
     padding-top: 20px;
-    background-image: url(images/madlibprompt.jpg);
+    background-image: url(/madlibs/images/madlibprompt.jpg);
 }
 
 form input {
@@ -160,7 +160,7 @@ footer p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(images/madliblyric.jpg);
+    background-image: url(/madlibs/images/madliblyric.jpg);
     width: 60%;
     height: 70vh;
     padding: 40px;
