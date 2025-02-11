@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLib</title>
+    <!-- Add normalize CSS and Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Fascinate+Inline&family=Faster+One&family=Rock+3D&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add your custom CSS -->
+    <link rel="stylesheet" href="madlib.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="rotated">
+            <h1>MadLiblues</h1>
+        </div>
+    </header>
+
+    <div id="spin"><img src="images/dvd.jpg" alt="dvd"></div>
+
+    <main>
+        
+        <h1>Write your song</h1>
+        
+        <section id="madlibprompt">
+            <h2>Lyric Generator</h2>
+            <form id="myform">
+                
+                <label for="name1">Name yourself</label>
+                <input type="text" name="name1" id="name1" value="Gary" required>
+                
+                <label for="verb1">A verb of movement end in -ing</label>
+                <input type="text" name="verb1" id="verb1" value="wandering" required>
+                
+                <label for="city">Name a city</label>
+                <input type="text" name="city" id="city" value="Dallas" required>
+                
+                <label for="adj1">A desciptive adjective</label>
+                <input type="text" name="adj1" id="adj1" value="wicked" required>
+                
+                <label for="noun1">A thing in your bag</label>
+                <input type="text" name="noun1" id="noun1" value="cigarettes" required>
+                
+                <label for="place">Name a place</label>
+                <input type="text" name="place" id="place" value="shelter" required>
+                
+                <label for="adj2">Adjective describe feelings</label>
+                <input type="text" name="adj2" id="adj2" value="agitated" required>
+                
+                <label for="adj3">Adjective describe feelings</label>
+                <input type="text" name="adj3" id="adj3" value="sad" required>
+<!--p2-->
+                <label for="noun2">Name a vehicle</label>
+                <input type="text" name="noun2" id="noun2" value="bike" required>
+
+                <label for="money">Amount of money</label>
+                <input type="text" name="money" id="money" value="couple bucks" required>
+
+                <label for="name2">Name a musician</label>
+                <input type="text" name="name2" id="name2" value="Jimi" required>
+<!--p3-->
+                <label for="road">Name a road</label>
+                <input type="text" name="road" id="road" value="broadway west" required>
+
+                <label for="noun3">Instrument</label>
+                <input type="text" name="noun3" id="noun3" value="harmonica" required>
+
+                <label for="noun4">Noun</label>
+                <input type="text" name="noun4" id="noun4" value="drumer" required>
+
+                <label for="name3">A person's name</label>
+                <input type="text" name="name3" id="name3" value="Sarah" required>
+
+                <label for="verb2">A verb of state end in -ing</label>
+                <input type="text" name="verb2" id="verb2" value="grinding" required>
+
+                <label for="adj4">Adverb</label>
+                <input type="text" name="adj4" id="adj4" value="softly" required>
+  
+            </form>
+            <button type="submit" id="go">Generate MadLib</button>
+        </section>
+        
+        <section id="overlay" class="hidden">
+            <article id="madlib">
+                <p id="songtitle"><span>(Your Name)</span> Still Got the Blues</p>
+
+                <p>(Slow shuffle beat, a grit in your voice...)</p>
+
+                <p>I was <span>(verb-ing)</span> down in <span>(City)</span>, just mindin' my way,<br>When a <span>(adj)</span> stranger took my <span>(noun)</span> away.<br>Now I'm stuck in this <span>(place)</span> with a <span>(adj)</span> frown,<br>Got the mean ol'<span>(adj)</span> blues draggin' me down.<br></p>
+
+                <p>(Guitar lick -- Wah,wah...)</p>
+
+                <p>My <span>(noun)</span> won't start, my <span>body part</span> is sore,<br>I Lost my last <span>(amount of money)</span>, can't take no more.<br>I tried to call up <span>(name a musician)</span> for some advice,<br>But all they said was, "Boy, life ain't nice."</p>
+
+                <p>(Sigh -- slide guitar wails...)</p>
+
+                <p>So I'm headin' down <span>(name a road)</span>, with my <span>(instrument)</span> in hand,<br>Ain't got no <span>(noun)</span>, just a one man's band.<br>If you see my <span>(person's name)</span>, tell'em I'm <span>(verb-ing)</span>,<br>Singin' them <span>(adj)</span>, while my guitar rings.</p>
+
+                <button type="submit" id="close">Redo</button>
+            </article>
+
+        </section>
+
+        <script src="madlib.js" defer></script>
+    </main>
+    
+    <footer>
+        <p>&copy; MadLib by Travis.Chen</p>
+    </footer>
+    
+</body>
+</html>

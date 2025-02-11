@@ -1,0 +1,142 @@
+/*overlay*/
+
+/*dvd*/
+#spin {
+    position: absolute;
+    left:10px;
+    top:10px;
+    animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+/*body*/
+html {
+    background-color: rgba(0, 0, 0);
+}
+
+body {
+    font-family: "Barriecito", serif;
+    color: antiquewhite;
+}
+
+header #rotated h1 {
+    text-align: center;
+    width: fit-content; 
+    border: double antiquewhite;
+    border-radius: 75%;
+}
+
+header #rotated{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    font-family: "Rock 3D", serif;
+    background-color: brown;
+    margin-top: -5px;
+    animation: rotated 20s linear infinite;
+}
+
+@keyframes rotated {
+    0% {
+        transform:rotateY(0deg);
+    }
+    100% {
+        transform:rotateY(360deg);
+    }
+}
+
+/*madlibprompt*/
+
+main > h1 {
+    text-align: center;
+    font-family:"Faster One", serif;
+}
+
+#madlibprompt > h2 {
+    margin:auto;
+    font-family: "Fascinate Inline", serif;
+    font-size: 40px;
+    color: #a52a52;
+    max-width: fit-content;
+    border: dotted antiquewhite 3px;
+    border-radius: 75%;
+    transition: 2s;
+}
+
+#madlibprompt > h2:hover {
+    font-size: 60px;
+}
+
+form { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    background-image: url(images/madlibprompt.jpg);
+}
+
+form input {
+    margin-right: 100px;
+    margin-left: 5px;
+    background-color: rgba(225, 206, 178, 0.5);
+    border-radius: 50%;
+    border: inset rgb(152, 152, 152) 4px;
+    margin-bottom: -10px;
+    text-align: center;
+    max-width: 300px;
+    color: rgb(70, 17, 17);
+}
+
+form input:hover {
+    background: rgb(255,221,179);
+    background: radial-gradient(circle, rgba(255,221,179,0) 0%, rgba(255,221,179,1) 50%, rgba(255,221,179,0) 100%);
+}
+
+form label {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+form label:hover {
+    font-size: larger;
+    font-stretch: expanded; 
+}
+
+button {
+    font-family: "Fascinate Inline", serif;
+    color: rgb(209, 171, 114);
+    margin-left: 63%;
+    background-color: antiquewhite;
+    border-radius: 25%;
+    border: outset silver 3px;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border: outset silver 5px;
+}
+
+/*footer*/
+
+footer p {
+    text-align: right;
+    padding-right: 10px;
+    color: #a52a52;
+}
+
+/*overlay*/
+#overlay {
+    position: f
