@@ -139,4 +139,40 @@ footer p {
 
 /*overlay*/
 #overlay {
-    position: f
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+    display:none;
+}
+
+.showing {
+    display:block;
+}
+
+#overlay article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(images/madliblyric.jpg);
+    width: 60%;
+    height: 70vh;
+    padding: 40px;
+    color: whitesmoke;
+    font-size: larger;
+    -webkit-text-stroke: 0.5px rgb(255, 247, 233);
+}
+
+#overlay article span {
+    color: rgb(255, 38, 92);
+    -webkit-text-stroke: 0px;
+    font-size: larger;
+}
+
+
