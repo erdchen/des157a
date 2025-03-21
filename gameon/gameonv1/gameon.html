@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="gameon.css" rel="stylesheet">
+
+    <script src="gameon.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>KingKong vs Godzilla</h1>
+    </header>
 
     <main>
         <div id="empire">
@@ -16,16 +24,17 @@
             <div id="godzilla"></div>
             <div id="g-attack"></div>
         </div>
+        
         <div id="gamepad">
             <div id="roll">climb</div>
             <div id="pass">switch player</div>
         </div>
     </main>
-    <div id="k-won">
+    <div id="k-won" class="hidden">
         <p>KingKong Won!</p>
         <btn>again</btn>
     </div>
-    <div id="g-won">
+    <div id="g-won" class="hidden">
         <p>Gozilla Won!</p>
         <btn>again</btn>
     </div>

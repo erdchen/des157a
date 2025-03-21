@@ -122,4 +122,5 @@ img:hover {
 /*overlay*/
 .hidden > img {
     transform: none;
+    width: 100%;
 }
