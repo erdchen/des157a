@@ -49,6 +49,11 @@ button {
     gap: 15px;
 }
 
+.health > p {
+    font-family: "Faster One", system-ui;
+    color: bisque;
+}
+
 #healthbar0, #healthbar1 {
     width: 75%;
     height: 30px;
