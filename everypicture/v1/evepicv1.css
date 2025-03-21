@@ -1,0 +1,36 @@
+
+main {
+    display: flex;
+    background-color: black;
+
+    
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.a {
+    flex: 1;
+}
+
+.b {
+    flex: 1;
+}
+
+.slider {
+    transition: all 30s linear;
+}
+
+@keyframes moveSlider {
+    from { top: 0; }
+    to { top: var(--sliderheight) }
+}
+
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

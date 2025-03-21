@@ -1,0 +1,108 @@
+/*overlay*/
+
+
+
+/*body*/
+html {
+    background-color: rgba(0, 0, 0);
+}
+
+body {
+    font-family: "Barriecito", serif;
+    color: antiquewhite;
+}
+
+
+/*madlibprompt*/
+
+main > h1 {
+    font-family:"Faster One", serif;
+    color: antiquewhite;
+}
+
+#madlibprompt > h2 {
+    margin:auto;
+    font-family: "Fascinate Inline", serif;
+    font-size: 40px;
+    color: #a52a52;
+    border-radius: 75%;
+    transition: 2s;
+}
+
+
+form { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+form input {
+    margin-right: 100px;
+    margin-left: 5px;
+    border: inset rgb(152, 152, 152) 4px;
+    margin-bottom: -10px;
+    text-align: center;
+    max-width: 300px;
+    color: rgb(255, 219, 120);
+}
+
+
+form label {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+
+button {
+    font-family: "Fascinate Inline", serif;
+    color: rgb(209, 171, 114);
+    border: outset silver 3px;
+    transition: 0.5s;
+}
+
+/*footer*/
+
+footer p {
+    text-align: right;
+    padding-right: 10px;
+    color: #a52a52;
+}
+
+/*overlay*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+    display:none;
+}
+
+.showing {
+    display:block;
+}
+
+#overlay article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70vh;
+    padding: 40px;
+    color: whitesmoke;
+    font-size: larger;
+    -webkit-text-stroke: 0.5px rgb(255, 247, 233);
+}
+
+
+
+
