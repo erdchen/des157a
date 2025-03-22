@@ -1,0 +1,202 @@
+body {
+    font-family: "Doto", sans-serif;
+    color: #ff5100;
+    background-color: bisque;
+}
+
+#messages > p {
+    background-color: rgb(255, 228, 196, 0.5);
+    color: black;
+    font-size: 1.2em;
+    font-family: "Barriecito", system-ui;
+}
+
+#background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    padding:30px;
+    font-family: "Honk", system-ui;
+    font-size: 5em;
+}
+
+h2 {
+    margin-left: 70px;
+    font-size: 1.6em;
+    font-family: "Honk", system-ui;
+}
+
+button {
+    font-family: "Honk", system-ui;
+    border-radius: 5px;
+}
+
+#game {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.health > p {
+    font-family: "Barriecito", system-ui;
+    color: bisque;
+}
+
+#healthbar0, #healthbar1 {
+    width: 75%;
+    height: 30px;
+    
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#healthbar0 div{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgb(148, 1, 62) 0%, rgb(203, 68, 144) 50%, rgb(148, 1, 1) 100%);
+}
+
+#healthbar1 div{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgb(3, 1, 148) 0%, rgb(68, 178, 203) 50%, rgb(21, 1, 148) 100%);
+}
+
+#action {
+    max-width: 1000px;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    font-weight: 900;
+    box-sizing: border-box;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* battle animations */
+
+/* Note the use of names for these classes. They all have the same names 
+with a number at the end, so that if the user rolls a 0, 1, 2, etc, that
+number can just be tacked on to the class name in JS. */
+.attack0 {
+    animation: veryweak 1s ease-in-out 2;
+}
+
+.attack1 {
+    animation: weak 1s ease-in-out 2;
+}
+
+.attack2 {
+    animation: medium 1s ease-in-out 2;
+}
+
+.attack3 {
+    animation: strong 1s ease-in-out 2;
+}
+
+.attack4 {
+    animation: massive 1s ease-in-out 2;
+}
+
+.defend2 {
+    animation: gobackward 2s ease-in-out 1;
+}
+
+.defend0 {
+    animation: shake 1s ease-in-out 2;
+}
+
+.defend1{
+    animation: spin 1s ease-in-out 2;
+}
+
+@keyframes veryweak {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.9);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes weak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes medium {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes strong {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.7);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes massive {
+    0% {transform: scale(1);}
+    50% {transform: scale(2.5);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes gobackward {
+    0% {transform: scale(1);}
+    20% {transform: scale(0.6) rotate(-15deg);}
+    40% {transform: scale(0.6) rotate(0deg);}
+    60% {transform: scale(0.6) rotate(15deg);}
+    80% {transform: scale(0.6) rotate(0deg);}
+    100% {transform: scale(1);}
+}
+
+@keyframes shake {
+    0% {transform: translateX(0px);}
+    20% {transform: translateX(-20px);}
+    40% {transform: translateX(20px);}
+    60% {transform: translateX(-10px);}
+    80% {transform: translateX(10px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);} 
+}
