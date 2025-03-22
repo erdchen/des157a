@@ -1,0 +1,123 @@
+:root {
+    --sliderwidth1: 0;
+    --sliderwidth2: 0;
+    --sliderwidth3: 0;
+}
+
+#banner {
+    width: 100%;
+    margin-top: -2px;
+    margin-left: -10px;
+    transform: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#slider1 {
+    margin-top: 150px;
+    
+}
+
+#slider2 {
+    margin-top: 400px;
+}
+
+#slider3 {
+    margin-top: 650px;
+}
+
+#slider1 {
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 200px;
+    transition: all 70s linear;
+}
+
+img {
+    height: 100%;
+    display: block;
+    margin-right: 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(20px 20px 40px rgba(255, 0, 38, 0.702));
+}
+
+.a, .b {
+   display: flex;
+   height: 100%;
+}
+
+@keyframes moveSlider {
+    from { left: 0; }
+    to { left: var(--sliderwidth) }
+}
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+#slider2 {
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 200px;
+    transition: all 60s linear;
+}
+
+.c, .d {
+    display: flex;
+    height: 100%;
+}
+ 
+@keyframes moveSlider2 {
+    from { left: 0; }
+    to { left: var(--sliderwidth2) }
+}
+.animate2 {
+    animation-name: moveSlider2;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+#slider3 {
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 200px;
+    transition: all 50s linear;
+}
+
+.e, .f {
+    display: flex;
+    height: 100%;
+}
+ 
+@keyframes moveSlider3 {
+    from { left: 0; }
+    to { left: var(--sliderwidth3) }
+}
+.animate3 {
+    animation-name: moveSlider3;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*overlay*/
+
