@@ -90,4 +90,77 @@ window.addEventListener('load', function () {
     });
 
     //overlay------------------------------------------------
+    const links = document.querySelectorAll('div a');
+    let thisPhoto;
+    for (const eachLink of links){
+        eachLink.addEventListener('click',function(event){
+            //alert(event.target.getAttribute('alt'));
+            thisPhoto = event.target.getAttribute('alt');
+            document.querySelector('#overlay').className = 'showing';
+            if(thisPhoto == 'pt1'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/111b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt2'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/112b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt3'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/113b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt4'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/114b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt5'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/115b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt6'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/116b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt7'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/211b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt8'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/212b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt9'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/213b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt10'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/214b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt11'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/215b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt12'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/216b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt13'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/311b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt14'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/312b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt15'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/313b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt16'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/314b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt17'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/315b.webp" alt="photo" id="close">`;
+            }
+            if(thisPhoto == 'pt18'){
+                document.querySelector('#overlay').innerHTML = `<img src="img2/316b.webp" alt="photo" id="close">`;
+            }
+
+            const myClose = document.querySelector('#close');
+
+            myClose.addEventListener('click', function(event){
+                event.preventDefault();
+                document.querySelector('#overlay').className = 'hidden';
+                console.log('clicked');
+            });
+        });
+    }
+
+    
 });
